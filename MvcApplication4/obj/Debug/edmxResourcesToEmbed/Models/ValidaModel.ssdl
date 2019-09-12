@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bd_validarModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="bd_validarModelStoreContainer">
+    <EntitySet Name="Curso" EntityType="bd_validarModel.Store.Curso" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Curso">
+    <Key>
+      <PropertyRef Name="codigo_c" />
+    </Key>
+    <Property Name="codigo_c" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_c" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="correo_c" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="credito_c" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>
